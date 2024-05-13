@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "./style.module.css";
 
-const index = ({ index, setModal, title }) => {
+const Index = ({ index, setModal, title }) => {
   return (
     <div
       onMouseEnter={() => {
@@ -19,4 +19,4 @@ const index = ({ index, setModal, title }) => {
   );
 };
 
-export default index;
+export default Index;
