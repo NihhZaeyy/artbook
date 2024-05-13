@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import { useState } from "react";
-import Project from "@/app/components/project-galery/project/Index";
-import Modal from "@/app/components/project-galery/modal/Index";
+import Modal_Index from "@/app/components/project-galery/modal/Modal_Index";
+import Project_Index from "@/app/components/project-galery/project/Project_Index";
 
 function Projects() {
   const projects = [
@@ -34,7 +34,7 @@ function Projects() {
       <div className="w-4/5 flex flex-col justify-center">
         {projects.map((project, index) => {
           return (
-            <Project
+            <Project_Index
               key={index}
               index={index}
               title={project.title}
@@ -43,7 +43,7 @@ function Projects() {
           );
         })}
       </div>
-      <Modal modal={modal} projects={projects} />
+      <Modal_Index modal={modal} projects={projects} />
     </>
   );
 }

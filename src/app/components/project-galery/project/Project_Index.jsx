@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import styles from "./style.module.css";
-
-const Index = ({ index, setModal, title }) => {
+const Project_Index = ({ index, setModal, title }) => {
   return (
     <div
       onMouseEnter={() => {
@@ -19,4 +18,4 @@ const Index = ({ index, setModal, title }) => {
   );
 };
 
-export default Index;
+export default Project_Index;

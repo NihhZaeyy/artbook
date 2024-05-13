@@ -20,7 +20,7 @@ const scaleAnimation = {
   },
 };
 
-export default function Index({ modal, projects }) {
+const Modal_Index = ({ modal, projects }) => {
   const { active, index } = modal;
   const modalContainer = useRef(null);
   const cursor = useRef(null);
@@ -65,7 +65,6 @@ export default function Index({ modal, projects }) {
       yMoveCursorLabel(pageY);
     });
   }, []);
-
   return (
     <>
       <motion.div
@@ -113,4 +112,6 @@ export default function Index({ modal, projects }) {
       </motion.div>
     </>
   );
-}
+};
+
+export default Modal_Index;
